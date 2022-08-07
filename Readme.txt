@@ -1,7 +1,13 @@
-To Run the code:
+1) To Run the code:
 java -jar currency-series-1.0-SNAPSHOT.jar
 
-To provide file path for the Payment file/Conversion rate, either provide file or enter skip.
+2) To provide file path for the Payment file/Conversion rate, either provide file or enter skip.
+
+3) To repackage the jar file 
+mvn package spring-boot:repackage
+
+4) To install the package
+mvn clean install
 
 Sample Files assuming the data are attached as well.
 
