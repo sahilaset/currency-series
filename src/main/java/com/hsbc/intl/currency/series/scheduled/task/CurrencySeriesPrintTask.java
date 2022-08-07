@@ -22,6 +22,7 @@ public class CurrencySeriesPrintTask implements Runnable{
     public void run() {
         Map<String, CurrencyBalanceDTO> currencyData = currencyService.getAllCurrencyBalances();
         Map<String, BigDecimal> currencyConversion = currencyService.getAllCurrencyConversionRate();
+        System.out.println("--------------------------Printing Data-----------------------------------------");
         currencyData.forEach( (currencyCd, currencyBalanceDTO)->{
             BigDecimal currencyConversionFactor = currencyConversion.getOrDefault(currencyCd, BigDecimal.ZERO);
             if(BigDecimal.ZERO.equals(currencyConversionFactor)){

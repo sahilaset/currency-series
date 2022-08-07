@@ -55,7 +55,8 @@ public class CurrencySeriesPrintTaskTest {
         //verify
         String output= getOutput();
         output=output.trim().replaceAll(System.lineSeparator(),"");
-        String expected = "Currency Code: HKD Amount:111 USD Value 1110\n" +
+        String expected = "--------------------------Printing Data-----------------------------------------"+
+                "Currency Code: HKD Amount:111 USD Value 1110\n" +
                 "Currency Code: GBP Amount:3000 USD Value doesn't exit\n" +
                 "Currency Code: USD Amount:111 USD Value 111\n";
         expected=expected.trim().replaceAll("\n","");
