@@ -9,6 +9,12 @@ mvn package spring-boot:repackage
 4) To install the package
 mvn clean install
 
+5) Runs on JDK 11
+
+6) Assume the conversion rate and the initial payment data is optional to load. Can be skipped as well.
+
+7) Assuming the payment are basically transactions which needs to be added to the balance of the currency. 
+
 Sample Files assuming the data are attached as well.
 
 Sample Execution
